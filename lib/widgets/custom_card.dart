@@ -21,7 +21,7 @@ class CustomCard extends StatelessWidget {
           child: Text(name ?? 'Sin Título'),
         ),
         FadeInImage(
-          placeholder: const AssetImage('assets/images/image-not-found.jpg'),
+          placeholder: const AssetImage('assets/images/image-not-found.png'),
           image: NetworkImage(imageUrl),
           width: double.infinity,
           height: 240,
@@ -31,9 +31,57 @@ class CustomCard extends StatelessWidget {
         Container(
           alignment: AlignmentDirectional.centerEnd,
           padding: const EdgeInsets.only(right: 20, top: 10, bottom: 10),
-          child: Text(name ?? 'Sin Título'),
-        )
+          child: TextButton(
+          child: const Text('Boton'),
+          onPressed: ()=> showsimpledialog(context),
+          
+          ),
+          ),
+        
       ]),
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+void showsimpledialog(BuildContext context) => showDialog(
+   context: context, 
+  builder: (context) => AlertDialog(
+
+    title: const Text("dsc"),
+    content: Column(children: [
+        Container(
+          alignment: AlignmentDirectional.center,
+          
+          child: const Text( 'dsalnfaklf titulo'),
+        ),
+        const FadeInImage(
+          placeholder: AssetImage('assets/images/image-not-found.png'),
+          image: AssetImage('assets/images/maxresdefault.jpg'),
+          width: double.infinity,
+          height: 240,
+          fit: BoxFit.cover,
+          fadeInDuration: Duration(milliseconds: 1000),
+        ),
+    
+        Container(
+          child: const Text('cuadro de diologo aaasdsaddd zz--dkdsada cuerpo'),
+        ),
+        
+        OutlinedButton(onPressed: ()=> Navigator.of(context).pop, child: const Text('Close'))
+
+
+    ],),
+  ),
+
+
+ 
+  );

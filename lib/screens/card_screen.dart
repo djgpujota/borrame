@@ -12,9 +12,9 @@ class CardScreen extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
           children: const [
             CustomCard(
-              name: 'Soy un card',
+              name: 'Soy un cardex',
               imageUrl:
-                  'https://jesusgovea.com/wp-content/uploads/2019/08/cropped-usuarios-arquitectura-1-1-1200x480.jpg',
+                  'https://developer.android.com/static/images/ui/dialogs_regions.png?hl=es-419',
             ),
             SizedBox(
               height: 20,
