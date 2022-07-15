@@ -54,29 +54,34 @@ class CustomCard extends StatelessWidget {
 
 void showsimpledialog(BuildContext context) => showDialog(
    context: context, 
-  builder: (context) => AlertDialog(
+  builder: (BuildContext context) => AlertDialog(
 
-    title: const Text("dsc"),
+    title: const Text("MODAL"),
+    
     content: Column(children: [
         Container(
           alignment: AlignmentDirectional.center,
           
-          child: const Text( 'dsalnfaklf titulo'),
+          child: const Text( 'Titulo del popup'),
         ),
         const FadeInImage(
           placeholder: AssetImage('assets/images/image-not-found.png'),
           image: AssetImage('assets/images/maxresdefault.jpg'),
-          width: double.infinity,
-          height: 240,
-          fit: BoxFit.cover,
+          // width: double.infinity,
+          
+          
+          // fit: BoxFit.cover,
           fadeInDuration: Duration(milliseconds: 1000),
         ),
     
         Container(
-          child: const Text('cuadro de diologo aaasdsaddd zz--dkdsada cuerpo'),
+          child: const Text('cuadro de diologo del popup'),
         ),
         
-        OutlinedButton(onPressed: ()=> Navigator.of(context).pop, child: const Text('Close'))
+        OutlinedButton(
+          onPressed: () => Navigator.pop(context),
+          // onPressed: ()=> Navigator.of(context).pop, 
+          child: const Text('Close'))
 
 
     ],),

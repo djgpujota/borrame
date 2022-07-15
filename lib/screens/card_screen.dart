@@ -14,7 +14,7 @@ class CardScreen extends StatelessWidget {
             CustomCard(
               name: 'Soy un cardex',
               imageUrl:
-                  'https://developer.android.com/static/images/ui/dialogs_regions.png?hl=es-419',
+                  'https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2020/04/hipertextual-github-equipos-ahora-es-totalmente-gratis-2020680731.jpg?w=1560&quality=50&strip=all&ssl=1',
             ),
             SizedBox(
               height: 20,
@@ -22,7 +22,7 @@ class CardScreen extends StatelessWidget {
             CustomCard(
               name: 'Soy un card',
               imageUrl:
-                  'https://jesusgovea.com/wp-content/uploads/2019/08/cropped-usuarios-arquitectura-1-1-1200x480.jpg',
+                  'https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2020/04/hipertextual-github-equipos-ahora-es-totalmente-gratis-2020680731.jpg?w=1560&quality=50&strip=all&ssl=1',
             )
           ],
         ));
